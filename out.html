@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <script type="text/javascript" src="https://livejs.com/live.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Sets</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Sets</h1>
+</div>
+<div id="introduction" class="slide section level1">
+<h1>Introduction</h1>
+<p>Consider the following objects:</p>
+</div>
+<div id="introduction-1" class="slide section level1">
+<h1>Introduction</h1>
+<p>Consider the following objects:</p>
+<p>apple, orange, banana, watermelon, grapes</p>
+</div>
+<div id="introduction-2" class="slide section level1">
+<h1>Introduction</h1>
+<p>Consider the following objects:</p>
+<p>apple, orange, banana, watermelon, grapes</p>
+<p>What are these objects?</p>
+</div>
+<div id="introduction-3" class="slide section level1">
+<h1>Introduction</h1>
+<p>Consider the following objects:</p>
+<p>apple, orange, banana, watermelon, grapes</p>
+<p>What are these objects?</p>
+<p>Fruits</p>
+</div>
+<div id="introduction-4" class="slide section level1">
+<h1>Introduction</h1>
+<p>Consider another collection of objects:</p>
+</div>
+<div id="introduction-5" class="slide section level1">
+<h1>Introduction</h1>
+<p>Consider another collection of objects:</p>
+<p>blue, yellow, green, red, indigo</p>
+</div>
+<div id="introduction-6" class="slide section level1">
+<h1>Introduction</h1>
+<p>Consider another collection of objects:</p>
+<p>blue, yellow, green, red, indigo</p>
+<p>What are these objects?</p>
+</div>
+<div id="introduction-7" class="slide section level1">
+<h1>Introduction</h1>
+<p>Consider another collection of objects:</p>
+<p>blue, yellow, green, red, indigo</p>
+<p>What are these objects?</p>
+<p>Colors</p>
+</div>
+<div id="introduction-8" class="slide section level1">
+<h1>Introduction</h1>
+<p>Consider one more collection of objects:</p>
+<p>1, 2, 10, 30, 5, 0, -10</p>
+<p>What are these objects?</p>
+</div>
+<div id="introduction-9" class="slide section level1">
+<h1>Introduction</h1>
+<p>Consider one more collection of objects:</p>
+<p>1, 2, 10, 30, 5, 0, -10</p>
+<p>What are these objects?</p>
+<p>Integers</p>
+</div>
+<div id="introduction-10" class="slide section level1">
+<h1>Introduction</h1>
+<p>Finally, consider this collection of objects:</p>
+<p>10, apple, green, 5.3, blue</p>
+<p>What are these objects?</p>
+</div>
+<div id="introduction-11" class="slide section level1">
+<h1>Introduction</h1>
+<p>Finally, consider this collection of objects:</p>
+<p>10, apple, green, 5.3, blue</p>
+<p>What are these objects?</p>
+<p><img src="img_0001.png" style="zoom:50%;" /></p>
+</div>
+<div id="introduction-12" class="slide section level1">
+<h1>Introduction</h1>
+<p>We saw four collections:</p>
+<ul>
+<li>a <strong>set</strong> of fruits</li>
+<li>a <strong>set</strong> of colors</li>
+<li>a <strong>set</strong> of numbers</li>
+<li>some collection of objects</li>
+</ul>
+</div>
+<div id="definition" class="slide section level1">
+<h1>Definition</h1>
+<p>A <strong>set</strong> is a collection of <em>well-defined</em> objects.</p>
+</div>
+<div id="definition-1" class="slide section level1">
+<h1>Definition</h1>
+<p>A <strong>set</strong> is a collection of <em>well-defined</em> objects.</p>
+<hr>
+<div class="columns">
+<div class="column">
+<p>It is tough to describe exactly what is meant by the phrase <em>well-defined</em>. One way to understand what is meant by the term is to ask a question about the collection. Can you guess what this question could be?</p>
+</div>
+</div>
+</div>
+<div id="definition-2" class="slide section level1">
+<h1>Definition</h1>
+<p>A <strong>set</strong> is a collection of <em>well-defined</em> objects.</p>
+<hr>
+<div class="columns">
+<div class="column">
+<p>It is tough to describe exactly what is meant by the phrase <em>well-defined</em>. One way to understand what is meant by the term is to ask a question about the collection. Can you guess what this question could be?</p>
+<blockquote>
+<p>Do the objects in a collection have a common property?</p>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="definition-3" class="slide section level1">
+<h1>Definition</h1>
+<p>A <strong>set</strong> is a collection of <em>well-defined</em> objects.</p>
+<hr>
+<div class="columns">
+<div class="column">
+<p>It is tough to describe exactly what is meant by the phrase <em>well-defined</em>. One way to understand what is meant by the term is to ask a question about the collection. Can you guess what this question could be?</p>
+<blockquote>
+<p>Do the objects in a collection have a common property?</p>
+</blockquote>
+</div><div class="column">
+<p>For example, recall the first collection that we saw:</p>
+<p>apple, orange, banana, watermelon, grapes</p>
+<p>The property common to each of these objects is “fruit-ness”. That is, each member of this collection is a fruit.</p>
+</div>
+</div>
+</div>
+<div id="definition-4" class="slide section level1">
+<h1>Definition</h1>
+<p>A <strong>set</strong> is a collection of <em>well-defined</em> objects.</p>
+<hr>
+<div class="columns">
+<div class="column">
+<p>It is tough to describe exactly what is meant by the phrase <em>well-defined</em>. One way to understand what is meant by the term is to ask a question about the collection. Can you guess what this question could be?</p>
+<blockquote>
+<p>Do the objects in a collection have a common property?</p>
+</blockquote>
+</div><div class="column">
+<p>For example, recall the first collection that we saw:</p>
+<p>apple, orange, banana, watermelon, grapes</p>
+<p>The property common to each of these objects is “fruit-ness”. That is, each member of this collection is a fruit.</p>
+</div>
+</div>
+<hr>
+<p>We will be mostly dealing with sets of numbers.</p>
+</div>
+</body>
+</html>
